@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Paris-Roubaix</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kasper Tamás">
+    <meta name="description" content="kezdőlap">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="kepek/favicon.png" rel="icon" type="image/x-icon">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+<div class="header"><p>Paris-Roubaix</p></div>
+<div class="nav">
+    <ul class="flex-container">
+        <li class="col-4 col-t-4"><a href="index.html">Bemutatkozó</a></li>
+        <li class="col-4 col-t-4"><a href="galeria.html">Képgaléria</a></li>
+        <li class="col-4 col-t-4"><a id="active" href="kapcsolat.html">Kapcsolat</a></li>
+    </ul>
+</div>
+<div class="content2 ">
+<form action="http://szamtud.uni-corvinus.hu/~blang/receive.php" method="post" id="myform">
+    <table>
+        <tr>
+            <td>
+                <h1>Adatok</h1>
+                <br>
+                <label for="nev">Név:</label> <br>
+                <input class="text" type="text" id="nev" name="nev"> <br>
+                <label for="megjegyzesek">Megjegyzések:</label> <br>
+                <input class="text"  type="text" id="megjegyzesek" name="megjegyzesek"> <br>
+                <input type="checkbox" name="elfogadta" id="elf">
+                <label for="elf">Elfogadom a feltételeket</label>
+            </td>
+            <td>
+                <label for="">Ajándékcsomagok</label>
+                <br><br>
+                <label for="a"> Team Bahrain Victorious tbv</label> <br>
+                <input type="checkbox" name="csomag" id="a"> <br>
+                <label for="b"> Lotto Sudal</label> <br>
+                <input type="checkbox" name="csomag" id="b"> <br>
+                <label for="c"> lpecin-Fenix</label> <br>
+                <input type="checkbox" name="csomag" id="c"> <br> <br>
+            
+                <label for="">Szállítási mód</label> <br><br>
+                <input type="radio" name="szallitasimod" id="d">
+                <label for="d"> Személyes átvétel (aznapi szállítás)</label>  <br>
+                <input type="radio" name="szallitasimod" id="e"> 
+                <label for="e"> Standard Kiszállítás (5-10 munkanap)</label> <br>
+                <input type="radio" name="szallitasimod" id="f"> 
+                <label for="f"> Expressz Kiszállítás (1-2 munkanap)</label> <br>
+            </td>
+        </tr>
+        <tr><td colspan="2">
+            <button type="button" onclick="kiszamol()">kiszámol</button>
+            <label for="kisz">Kiszállítás ára</label>
+            <br>
+            <input class="text" type="text" id="kisz" style="width: 100%;" value="-" name="ar">
+        </td>
+    </tr>
+        <tr><td colspan="2">
+            <button type="button" onclick="elkuld()">Elküld</button>
+            <button>Töröl</button>
+        </td>
+    </tr>
+    </table>
+</form>
+</div>
+<div class="footer"><p>A weboldal oktatási célokat szolgál.</p></div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

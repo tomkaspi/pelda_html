@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-size: 1em;
+}
+
+article{
+    justify-content: center;
+    background-color: black;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+
+#gallery{
+    padding: 15px;
+    margin: 15px;
+    height: fit-content;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 0.8em 0.8em;
+    background-color: black;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+content{
+    display: flex;
+    flex-direction: row;
+}
+
+content img{
+        transition: 2s;
+}
+content img:hover{
+    transform: rotate(2deg);
+}
+
+.content2{
+    padding: 0;
+    margin: 1%;
+    background-color: black;
+}
+
+.content2 table{
+    border: 1px dotted white;
+    width: 100%;
+}
+
+.content2 td{
+    border: 1px dotted white;
+    padding: 15px;
+}
+
+.header{
+    background-color: red;
+    background-image: url(kepek/hero.jpg);
+    margin-bottom: 2%;
+    font-size: 4vw;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Bebas Neue', 'cursive';
+}
+
+
+.text{
+    color: black;
+    padding: 1%;
+    color: black;
+    border-radius: 4px;
+    width: 100%;
+
+
+}
+
+#myform button{
+    color: black;
+}
+
+.footer{
+    background-color: black;
+    margin-top: 2%;
+    text-align: center;
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+figcaption{
+    padding: 2%;
+}
+
+ul li{
+    padding: 15px; 
+    list-style-type: none;
+}
+ul li a{
+    display: block;
+    color: white;
+    background-color: rgba(22, 47, 79, 0.6);
+    text-decoration: none;
+    padding: 5%;
+    letter-spacing: 6px;
+}
+
+#active{
+    background-color: black;
+    text-decoration-line: overline underline;
+} 
+
+
+a:hover{
+    text-decoration-line: overline underline;
+}
+
+
+figure{
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    height: auto;
+}
+aside{
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    height: auto;
+    background-color: black;
+}
+
+
+
+@media (max-width: 600px) {
+.flex-container{
+    flex-direction: column;
+}
+}
+
+@media only screen and (min-width: 600px) {
+    /* tablet */
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* számítógép */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
